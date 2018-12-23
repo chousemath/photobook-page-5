@@ -13,13 +13,14 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 50px;
   }
 
   .container-secondary {
     width: 50px;
-    height: 450px;
-    background-color: #9d63db;
+    height: 500px;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
   }
@@ -30,7 +31,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f6144f;
+    background-color: #78402d;
   }
 
   .container-tertiary-2 {
@@ -39,7 +40,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ff6b58;
+    background-color: #b64444;
   }
 
   .container-tertiary-3 {
@@ -48,7 +49,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #685b72;
+    background-color: #db5252;
   }
 
   .container-number {

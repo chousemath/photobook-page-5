@@ -24,8 +24,20 @@ function checkValues() {
   var word =
       val0 + val1 + val2 + val3 + val4 + val5 + val6 + val7 + val8 + val9;
   if (word === 'VOEJ2JmQt9') {
-    console.log('success');
     $('#container-puzzle').hide();
+    $('#container-puzzle-2').show();
+    setTimeout(function() {
+      $('#input-x0').focus();
+    }, 100);
+  }
+}
+
+function checkValues2() {
+  var val0 = $('#input-x0').val();
+  var val1 = $('#input-x1').val();
+  var word = val0 + val1;
+  if (word === '34') {
+    $('#container-puzzle-2').hide();
     var video = $('#container-video');
     video.show();
     setTimeout(function() {
@@ -72,4 +84,12 @@ $('#input-8').bind('input', function() {
 });
 $('#input-9').bind('input', function() {
   checkValues();
+});
+
+$('#input-x0').bind('input', function() {
+  $('#input-x1').focus();
+  checkValues2();
+});
+$('#input-x1').bind('input', function() {
+  checkValues2();
 });
