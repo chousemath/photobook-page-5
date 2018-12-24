@@ -93,3 +93,5 @@ $('#input-x0').bind('input', function() {
 $('#input-x1').bind('input', function() {
   checkValues2();
 });
+
+$('#input-0').focus();
